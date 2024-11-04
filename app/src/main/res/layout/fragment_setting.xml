@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:descendantFocusability="afterDescendants">
+
+    <com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="50dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <TextView
+            android:textSize="32sp"
+            android:textColor="#FFF"
+            android:text="操作"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/focusable"
+                android:background="@drawable/selector_bg_focusable_with_bg"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btSelect"
+                android:textColor="#FFF"
+                android:text="选择图片"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/focusable"
+                android:background="@drawable/selector_bg_focusable_with_bg"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btLauncher"
+                android:textColor="#FFF"
+                android:layout_marginStart="30dp"
+                android:text="设为桌面"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout>
+
+
+
+        <TextView
+            android:textSize="32sp"
+            android:textColor="#FFF"
+            android:text="设置"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.zjh.screenprotection.widget.TvRecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/rvSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout>
+
+</androidx.core.widget.NestedScrollView>

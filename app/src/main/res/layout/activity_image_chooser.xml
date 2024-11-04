@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    style="@style/unfocused">
+
+    <com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        style="@style/unfocused">
+
+        <Button
+            android:background="@drawable/selector_bg_focusable_with_bg"
+            style="@style/focusable"
+            android:id="@+id/btAll"
+            android:layout_gravity="center_vertical"
+            android:text="全选"
+            android:textSize="24sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <Button
+            android:background="@drawable/selector_bg_focusable_with_bg"
+            style="@style/focusable"
+            android:layout_marginTop="50dp"
+            android:id="@+id/btApply"
+            android:layout_gravity="center_vertical"
+            android:text="应用"
+            android:textSize="24sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+    </com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout>
+
+    <com.zjh.screenprotection.widget.TvRecyclerView
+        android:id="@+id/rvImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.zjh.screenprotection.widget.bring.BringToFrontLinearLayout>

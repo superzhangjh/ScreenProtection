@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/unfocused"
+    android:descendantFocusability="beforeDescendants">
+
+    <View
+        tools:background="#0000"
+        android:background="@drawable/shape_bg_keyboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/vDpadBg"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/vDpadBg"
+        app:layout_constraintEnd_toEndOf="@id/vDpadBg"
+        app:layout_constraintTop_toTopOf="@id/vDpadBg"
+        app:layout_constraintBottom_toBottomOf="@id/vDpadBg"
+        android:id="@+id/enter"
+        app:tint="#FFF"
+        android:src="@drawable/icon_enter"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+    <ImageView
+        android:id="@+id/up"
+        app:tint="#FFF"
+        app:layout_constraintTop_toTopOf="@id/vDpadBg"
+        app:layout_constraintStart_toStartOf="@id/vDpadBg"
+        app:layout_constraintEnd_toEndOf="@id/vDpadBg"
+        android:src="@drawable/icon_up"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/down"
+        app:tint="#FFF"
+        app:layout_constraintStart_toStartOf="@id/vDpadBg"
+        app:layout_constraintEnd_toEndOf="@id/vDpadBg"
+        app:layout_constraintBottom_toBottomOf="@id/vDpadBg"
+        android:src="@drawable/icon_down"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/left"
+        app:tint="#FFF"
+        app:layout_constraintStart_toStartOf="@id/vDpadBg"
+        app:layout_constraintTop_toTopOf="@id/vDpadBg"
+        app:layout_constraintBottom_toBottomOf="@id/vDpadBg"
+        android:src="@drawable/icon_left"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/right"
+        app:tint="#FFF"
+        app:layout_constraintEnd_toEndOf="@id/vDpadBg"
+        app:layout_constraintTop_toTopOf="@id/vDpadBg"
+        app:layout_constraintBottom_toBottomOf="@id/vDpadBg"
+        android:src="@drawable/icon_right"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/menu"
+        app:tint="#FFF"
+        app:layout_constraintTop_toTopOf="@id/vDpadBg"
+        app:layout_constraintStart_toEndOf="@id/vDpadBg"
+        android:src="@drawable/icon_menu"
+        android:paddingHorizontal="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        app:tint="#FFF"
+        app:layout_constraintBottom_toBottomOf="@id/vDpadBg"
+        app:layout_constraintStart_toStartOf="@id/menu"
+        app:layout_constraintEnd_toEndOf="@id/menu"
+        android:src="@drawable/icon_back"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

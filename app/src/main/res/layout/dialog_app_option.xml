@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/shape_app_option"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="应用"
+        android:textSize="24sp"
+        android:textColor="#FFF"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        style="@style/focusable"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvLike"
+        android:text="标为喜欢"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_bg_focusable_with_bg"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        style="@style/focusable"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvUninstall"
+        android:text="卸载"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_bg_focusable_with_bg"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+</LinearLayout>
