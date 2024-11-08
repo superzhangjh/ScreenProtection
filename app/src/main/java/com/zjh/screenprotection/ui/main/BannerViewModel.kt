@@ -44,7 +44,7 @@ class BannerViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun setSetting(settings: BannerSettings) {
-        this.settings.value = settings
+        this.settings.postValue(settings)
         spUtils.putString(SPUtils.KEY_SETTING, GsonUtils.toJson(settings))
     }
 }

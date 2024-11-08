@@ -30,7 +30,11 @@ data class SystemSetting(
                 SystemSetting(ID_SCALE_TYPE, false, listOf(
                     Option(settings.scaleType, "居中裁剪", ScaleType.CENTER_CROP),
                     Option(settings.scaleType, "拉伸铺满", ScaleType.FIT_XY),
-                    Option(settings.scaleType, "居中拉伸", ScaleType.FIT_CENTER)
+                    Option(settings.scaleType, "居中拉伸", ScaleType.FIT_CENTER),
+                    Option(settings.scaleType, "居中内部", ScaleType.CENTER_INSIDE),
+                    Option(settings.scaleType, "矩阵拉升", ScaleType.MATRIX),
+                    Option(settings.scaleType, "按头部拉升", ScaleType.FIT_START),
+                    Option(settings.scaleType, "按尾部拉升", ScaleType.FIT_END),
                 )),
                 SystemSetting(ID_TRANSFORMERS, false, BannerSettings.Transformer.entries.map {
                     Option(settings.transformer, it.des, it)

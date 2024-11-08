@@ -22,7 +22,7 @@ object FocusHandler {
                 bringToFront()
             }
         }
-        if (BuildConfig.DEBUG) {
+        if (false && BuildConfig.DEBUG) {
             val dpadView = DpadView(activity)
             val lp = FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT)
             lp.gravity = Gravity.END or Gravity.BOTTOM

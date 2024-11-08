@@ -9,7 +9,7 @@ data class BannerSettings(
     val scrollTime: Int = 800,
     val orientation: Int = Banner.VERTICAL,
     val transformer: Transformer = Transformer.ALPHA,
-    val scaleType: ImageView.ScaleType = ImageView.ScaleType.FIT_CENTER
+    val scaleType: ImageView.ScaleType = ImageView.ScaleType.CENTER_INSIDE
 ) {
     enum class Transformer(val des: String) {
         ALPHA("淡入淡出"),

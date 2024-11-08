@@ -9,7 +9,7 @@
     android:gravity="center_vertical"
     style="@style/focusable"
     android:background="@drawable/selector_bg_focusable_translate_bg"
-    android:descendantFocusability="beforeDescendants"
+    android:descendantFocusability="blocksDescendants"
     android:paddingHorizontal="10dp">
 
     <TextView
