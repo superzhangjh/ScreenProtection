@@ -10,7 +10,7 @@ import com.zjh.screenprotection.utils.GsonUtils
 import com.zjh.screenprotection.utils.SPUtils
 
 class BannerViewModel(app: Application) : AndroidViewModel(app) {
-    private val spUtils = SPUtils(app)
+    private val spUtils = SPUtils.getInstance()
     val banners = MutableLiveData<List<BannerEntity>>()
     val settings = MutableLiveData<BannerSettings>()
 

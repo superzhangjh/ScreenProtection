@@ -11,7 +11,7 @@ import com.zjh.screenprotection.utils.SPUtils
 import com.zjh.screenprotection.utils.showToast
 
 class MyAppViewModel(private val app: Application) : AndroidViewModel(app) {
-    private val spUtils = SPUtils(app)
+    private val spUtils = SPUtils.getInstance()
     val appEntities = MutableLiveData<MutableList<AppEntity>?>()
 
     private fun setSortApps(apps: List<AppEntity>?) {

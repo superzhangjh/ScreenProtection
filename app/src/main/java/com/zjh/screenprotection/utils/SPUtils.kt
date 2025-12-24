@@ -1,11 +1,10 @@
 package com.zjh.screenprotection.utils
 
-import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import com.zjh.screenprotection.app.App
 
-class SPUtils(context: Context) {
+class SPUtils private constructor(context: Context) {
     companion object {
         const val KEY_BANNERS = "banners"
         const val KEY_SETTING = "setting"
